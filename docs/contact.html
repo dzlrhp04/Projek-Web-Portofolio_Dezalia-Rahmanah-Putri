@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Website Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">DEZALIA<span class="dot">.</span></a>
+      <nav class="nav" id="mainNav3">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portofolio.html" class="nav-link">Portofolio</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle3">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-hero">
+      <h1>Contact Me</h1>
+      <p class="lead">Kalau mau pesan jasa / konsultasi / review portfolio, isi form ini ya.</p>
+    </section>
+
+    <section class="contact-form">
+      <form id="contactForm" class="form-card" novalidate>
+        <div class="form-row">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama lengkap" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@contoh.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="topic">Jenis Layanan/Topik</label>
+          <select id="topic" name="topic" required>
+            <option value="">-- Pilih --</option>
+            <option>Request Project (pembuatan website)</option>
+            <option>Konsultasi Teknologi</option>
+            <option>Review Portofolio</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Pesan / Deskripsi Proyek</label>
+          <textarea id="message" name="message" rows="5" placeholder="Jelaskan singkat proyek atau pertanyaanmu..." required></textarea>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Preferensi Kontak</legend>
+          <label><input type="radio" name="contact_pref" value="email" checked /> Email</label>
+          <label><input type="radio" name="contact_pref" value="wa" /> WhatsApp</label>
+        </fieldset>
+
+        <div class="form-row">
+          <label><input type="checkbox" id="agree" required /> Saya setuju dihubungi terkait permintaan ini.</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Kirim</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
+
+        <p id="formMessage" class="muted small" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year3"></span> Liaa • Made with DEZA</p>
+      <p><a href="https://itpln.ac.id" target="_blank" rel="noopener">itpln.ac.id</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
